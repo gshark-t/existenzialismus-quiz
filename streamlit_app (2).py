@@ -45,7 +45,7 @@ st.markdown(page_bg, unsafe_allow_html=True)
 
 
 st.title("Meinungsquiz zum Existenzialismus")
-st.write("Jetzt kurz nach den Ferien kannst du hier wieder zum nachdenken kommen.")
+st.write("Jetzt kurz nach den Ferien kannst du hier wieder anfangen zu philosophieren.")
 
 quotes = [
     {"t": "Der Mensch ist vollkommen frei.", "p": "Sartre"},
@@ -55,7 +55,7 @@ quotes = [
     {"t": "Jeder gibt sich den Sinn des Lebens selber.", "p": "Sartre"},
     {"t": "Menschen tendieren dazu ihre Freiheit zum Teil zu leugnen um sich der damit folgenden Verantwortung für ihr Handeln zu entziehen.", "p": "Sartre"},
     {"t": "Wenn wir nicht mehr darauf vertrauen, dass alles sicher wird, eröffnet das neue Möglichkeiten, sich anzupassen und spontan zu handeln.", "p": "Camus"},
-    {"t": "Niemand weiß, dass manche Menschen enorme Energie aufwenden, um normal zu sein.", "p": "Camus"},
+    {"t": "Der Mensch ist das einzige Lebenwesen, dass sich weigert, das zu sein, was es ist.", "p": "Camus"},
     
 ]
 if "stage" not in st.session_state:
@@ -198,8 +198,8 @@ else:
     if sartre_avg > camus_avg:
         st.success("Nach deinen Antworten in diesen Quiz tendierst du eher zu Sartres Thesen und Ansichten.")
     elif camus_avg > sartre_avg:
-        st.success("Nach deinen Antworten in diesem Quiz tendierst du eger zu den Thesen und Ansichten von Camus")
+        st.success("Nach deinen Antworten in diesem Quiz tendierst du eher zu den Thesen und Ansichten von Camus.")
     else:
-        st.success("Du liegst nach deinen Antworten in diesem Quiz genau zwischen den Tesen von Sartre und Camus.")
+        st.success("Du liegst nach deinen Antworten in diesem Quiz genau zwischen den Thesen von Sartre und Camus.")
 
 
